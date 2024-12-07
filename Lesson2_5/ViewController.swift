@@ -54,6 +54,7 @@ extension ViewController: UITableViewDataSource {
         config.text = localArray[indexPath.row].text
         config.image = UIImage(named: localArray[indexPath.row].image)
         config.secondaryText = localArray[indexPath.row].descText
+        config.imageProperties.cornerRadius = 3
         
         cell.contentConfiguration = config
         return cell
