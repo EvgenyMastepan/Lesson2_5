@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         $0.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return $0
-    }(UITableView(frame: CGRect(x: leftIndent, y: leftIndent, width: view.frame.maxX - leftIndent - leftIndent, height: view.frame.maxY / 3 * 2), style: .grouped))
+    }(UITableView(frame: view.frame, style: .grouped))
     
     override func viewDidLoad() {
         super.viewDidLoad()
